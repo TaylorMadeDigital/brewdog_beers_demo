@@ -3,6 +3,14 @@ A simple app to fetch Brewdog beers from their API and display them in a catalog
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Getting started
+
+In the project directory, you can run: 
+
+### `yarn && yarn start`
+
+Install all dependencies and runs the app in development mode
+
 ## Available Scripts
 
 In the project directory, you can run:
