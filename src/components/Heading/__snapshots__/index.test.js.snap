@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Heading /> snapshot: renders default state 1`] = `
+<DocumentFragment>
+  <h2
+    class=""
+    data-testid="heading"
+  >
+    A sample heading
+  </h2>
+</DocumentFragment>
+`;
+
+exports[`<Heading /> snapshot: renders h4  1`] = `
+<DocumentFragment>
+  <h4
+    class=""
+    data-testid="heading"
+  >
+    A sample heading
+  </h4>
+</DocumentFragment>
+`;

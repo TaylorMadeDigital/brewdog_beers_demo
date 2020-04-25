@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import rootReducer from './reducers';
+import './assets/scss/base.scss';
+import ListingContainer from './containers/ListingContainer';
+import DetailContainer from './containers/DetailContainer';
 import * as serviceWorker from './serviceWorker';
+
+const store = createStore(rootReducer)
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <Router>
+        <Route path="/detail/:id" component={DetailContainer} />
+        <Route exact path="/" component={ListingContainer} />
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );

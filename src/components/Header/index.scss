@@ -1,0 +1,13 @@
+@import '../../assets/scss/variables';
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $space-base;
+
+  img {
+    max-width: 75px;
+    margin: 0 $space-base 0 0;
+  }
+}

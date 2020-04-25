@@ -1,0 +1,387 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListingContainer /> snapshot: renders default state 1`] = `
+<DocumentFragment>
+  <div>
+    <a
+      href="/"
+    >
+      <header>
+        <img
+          alt="Brewdog logo"
+          role="presentation"
+          src="brewdog_logo.png"
+        />
+        <h1
+          class=""
+          data-testid="heading"
+        >
+          Brewdog Beer Collection
+        </h1>
+      </header>
+    </a>
+    <div>
+      <label
+        for="filterDropdown"
+      >
+        Order by:
+      </label>
+      <select
+        data-testid="dropdown"
+        id="filterDropdown"
+      >
+        <option>
+          - Select an option -
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="first_brewed"
+        >
+          Date first brewed
+        </option>
+        <option
+          value="abv"
+        >
+          ABV
+        </option>
+        <option
+          value="ibu"
+        >
+          IBU
+        </option>
+      </select>
+    </div>
+    <div>
+      <article
+        data-testid="card"
+      >
+        <a
+          href="/detail/1"
+        >
+          <header
+            data-testid="cardHeading"
+          >
+            <h2
+              class=""
+              data-testid="heading"
+            >
+              Buzz
+            </h2>
+            <h3
+              class=""
+              data-testid="heading"
+            >
+              A Real Bitter Experience.
+            </h3>
+          </header>
+          <p>
+            First brewed: 09/2007
+          </p>
+          <span>
+            ABV: 4.5
+          </span>
+          <span>
+            IBU: 60
+          </span>
+        </a>
+      </article>
+      <article
+        data-testid="card"
+      >
+        <a
+          href="/detail/2"
+        >
+          <header
+            data-testid="cardHeading"
+          >
+            <h2
+              class=""
+              data-testid="heading"
+            >
+              Trashy Blonde
+            </h2>
+            <h3
+              class=""
+              data-testid="heading"
+            >
+              You Know You Shouldn't
+            </h3>
+          </header>
+          <p>
+            First brewed: 04/2008
+          </p>
+          <span>
+            ABV: 4.1
+          </span>
+          <span>
+            IBU: 41.5
+          </span>
+        </a>
+      </article>
+      <article
+        data-testid="card"
+      >
+        <a
+          href="/detail/3"
+        >
+          <header
+            data-testid="cardHeading"
+          >
+            <h2
+              class=""
+              data-testid="heading"
+            >
+              Berliner Weisse With Yuzu - B-Sides
+            </h2>
+            <h3
+              class=""
+              data-testid="heading"
+            >
+              Japanese Citrus Berliner Weisse.
+            </h3>
+          </header>
+          <p>
+            First brewed: 11/2015
+          </p>
+          <span>
+            ABV: 4.2
+          </span>
+          <span>
+            IBU: 8
+          </span>
+        </a>
+      </article>
+      <article
+        data-testid="card"
+      >
+        <a
+          href="/detail/4"
+        >
+          <header
+            data-testid="cardHeading"
+          >
+            <h2
+              class=""
+              data-testid="heading"
+            >
+              Pilsen Lager
+            </h2>
+            <h3
+              class=""
+              data-testid="heading"
+            >
+              Unleash the Yeast Series.
+            </h3>
+          </header>
+          <p>
+            First brewed: 09/2013
+          </p>
+          <span>
+            ABV: 6.3
+          </span>
+          <span>
+            IBU: 55
+          </span>
+        </a>
+      </article>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<ListingContainer /> snapshot: renders ordered by abv 1`] = `
+<DocumentFragment>
+  <div>
+    <a
+      href="/"
+    >
+      <header>
+        <img
+          alt="Brewdog logo"
+          role="presentation"
+          src="brewdog_logo.png"
+        />
+        <h1
+          class=""
+          data-testid="heading"
+        >
+          Brewdog Beer Collection
+        </h1>
+      </header>
+    </a>
+    <div>
+      <label
+        for="filterDropdown"
+      >
+        Order by:
+      </label>
+      <select
+        data-testid="dropdown"
+        id="filterDropdown"
+      >
+        <option>
+          - Select an option -
+        </option>
+        <option
+          value="name"
+        >
+          Name
+        </option>
+        <option
+          value="first_brewed"
+        >
+          Date first brewed
+        </option>
+        <option
+          value="abv"
+        >
+          ABV
+        </option>
+        <option
+          value="ibu"
+        >
+          IBU
+        </option>
+      </select>
+    </div>
+    <div>
+      <article
+        data-testid="card"
+      >
+        <a
+          href="/detail/2"
+        >
+          <header
+            data-testid="cardHeading"
+          >
+            <h2
+              class=""
+              data-testid="heading"
+            >
+              Trashy Blonde
+            </h2>
+            <h3
+              class=""
+              data-testid="heading"
+            >
+              You Know You Shouldn't
+            </h3>
+          </header>
+          <p>
+            First brewed: 04/2008
+          </p>
+          <span>
+            ABV: 4.1
+          </span>
+          <span>
+            IBU: 41.5
+          </span>
+        </a>
+      </article>
+      <article
+        data-testid="card"
+      >
+        <a
+          href="/detail/3"
+        >
+          <header
+            data-testid="cardHeading"
+          >
+            <h2
+              class=""
+              data-testid="heading"
+            >
+              Berliner Weisse With Yuzu - B-Sides
+            </h2>
+            <h3
+              class=""
+              data-testid="heading"
+            >
+              Japanese Citrus Berliner Weisse.
+            </h3>
+          </header>
+          <p>
+            First brewed: 11/2015
+          </p>
+          <span>
+            ABV: 4.2
+          </span>
+          <span>
+            IBU: 8
+          </span>
+        </a>
+      </article>
+      <article
+        data-testid="card"
+      >
+        <a
+          href="/detail/1"
+        >
+          <header
+            data-testid="cardHeading"
+          >
+            <h2
+              class=""
+              data-testid="heading"
+            >
+              Buzz
+            </h2>
+            <h3
+              class=""
+              data-testid="heading"
+            >
+              A Real Bitter Experience.
+            </h3>
+          </header>
+          <p>
+            First brewed: 09/2007
+          </p>
+          <span>
+            ABV: 4.5
+          </span>
+          <span>
+            IBU: 60
+          </span>
+        </a>
+      </article>
+      <article
+        data-testid="card"
+      >
+        <a
+          href="/detail/4"
+        >
+          <header
+            data-testid="cardHeading"
+          >
+            <h2
+              class=""
+              data-testid="heading"
+            >
+              Pilsen Lager
+            </h2>
+            <h3
+              class=""
+              data-testid="heading"
+            >
+              Unleash the Yeast Series.
+            </h3>
+          </header>
+          <p>
+            First brewed: 09/2013
+          </p>
+          <span>
+            ABV: 6.3
+          </span>
+          <span>
+            IBU: 55
+          </span>
+        </a>
+      </article>
+    </div>
+  </div>
+</DocumentFragment>
+`;

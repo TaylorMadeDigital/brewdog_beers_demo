@@ -1,0 +1,65 @@
+$max-line-length: 38em !default;
+
+$f-fallback: Helvetica, Arial, sans-serif;
+$f-light-text: "Lato" !default;
+$f-regular-text: "Lato" !default;
+$f-bold-text: "Montserrat" !default;
+
+$font-sizes: (
+  x-large: (
+    null: ( font-size: 1.5rem, line-height: 1.41, letter-spacing: -.6px ),
+    medium: ( font-size: 1.75rem, line-height: 1.28, letter-spacing: -.7px ),
+    x-large: ( font-size: 2rem, line-height: 1.31, letter-spacing: -.8px )
+  ),
+  large: (
+    null: ( font-size: 1.25rem, line-height: 1.5, letter-spacing: -.3px ),
+    medium: ( font-size: 1.375rem, line-height: 1.5, letter-spacing: -.55px ),
+    x-large: ( font-size: 1.5rem, line-height: 1.41, letter-spacing: -.6px )
+  ),
+  medium: (
+    null: ( font-size: 1.125rem, line-height: 1.5, letter-spacing: -.3px ),
+    medium: ( font-size: 1.25rem, line-height: 1.5, letter-spacing: -.3px )
+  ),
+  default: (
+    null: ( font-size: 1rem, line-height: 1.68, letter-spacing: -.3px )
+  ),
+  small: (
+    null: ( font-size: .875rem, line-height: 1.71, letter-spacing: -.35px )
+  ),
+  x-small: (
+    null: ( font-size: .75rem, line-height: 1.66, letter-spacing: -.3px )
+  )
+) !default;
+
+@mixin _set-font-properties($font-map, $family, $weight) {
+  @each $property, $value in $font-map {
+    #{$property}: $value;
+  }
+
+  font-family: $family, $f-fallback;
+  font-weight: $weight;
+}
+
+@mixin font-size($size: default, $type: 'regular') {
+  $font-size: map-get($font-sizes, $size);
+  $family: $f-regular-text;
+  $weight: 400;
+
+  @if ($type == 'light') {
+    $family: $f-light-text;
+    $weight: 300;
+  } @else if ($type == 'bold') {
+    $family: $f-bold-text;
+    $weight: 700;
+  }
+
+  @each $breakpoint, $properties in $font-size {
+    @if $breakpoint == null {
+      @include _set-font-properties($properties, $family, $weight);
+    } @else {
+      @include breakpoint($breakpoint) {
+        @include _set-font-properties($properties, $family, $weight);
+      }
+    }
+  }
+}

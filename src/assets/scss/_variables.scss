@@ -1,0 +1,27 @@
+$primary: #4791db;
+$secondary: #e33371;
+$error: #e57373;
+$warning: #ffb74d;
+$info: #64b5f6;
+$success: #81c784;
+$dark: #303030;
+$light: #fafafa;
+$disabled: rgba(255, 255, 255, 0.5);
+
+$heading-text-color: $primary;
+$light-text-color: $light;
+$body-text-color: $dark;
+
+$paper-bg-color: darken($light, 10%);
+$light-bg-color: $light;
+$toolbar-bg-color: darken($primary, 20%);
+$headline-font: 'Montserrat', sans-serif;
+$body-font: 'Lato', sans-serif;
+
+$space-xs: .25rem;
+$space-s: .5rem;
+$space-base: 1rem;
+$space-m: 1.5rem;
+$space-l: 2rem;
+$space-xl: 3rem;
+$space-xxl: 4rem;

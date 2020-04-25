@@ -1,0 +1,60 @@
+@import '../../assets/scss/grid';
+@import '../../assets/scss/typography';
+@import '../../assets/scss/variables';
+
+.root {
+  @include gridContainer;
+  padding: 0;
+}
+
+.header {
+  @include gridItem(12);
+  background: $toolbar-bg-color;
+  color: $light-text-color;
+  padding: $space-base;
+
+  h2, h3 {
+    color: $light-text-color;
+  }
+  h3, p {
+    display: inline-block;
+  }
+  h3 + p {
+    margin: 0 $space-s ;
+  }
+  p {
+    @include font-size('small');
+  }
+}
+
+.leftCol {
+  display: none;
+  @include breakpoint(medium) {
+    display: block;
+    @include gridItem(3);
+  }
+
+  padding: $space-base;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.rightCol {
+  @include gridItem(12);
+  padding: $space-base;
+  text-align: left;
+
+  @include breakpoint(medium) {
+    @include gridItem(9);
+  }
+}
+
+footer {
+  
+  @include font-size('small');
+  padding: $space-base;
+  text-align: right;
+  @include gridItem(12);
+}

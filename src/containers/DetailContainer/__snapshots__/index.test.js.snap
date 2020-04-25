@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DetailContainer /> snapshot: renders default state 1`] = `
+<DocumentFragment>
+  <a
+    href="/"
+  >
+    <header>
+      <img
+        alt="Brewdog logo"
+        role="presentation"
+        src="brewdog_logo.png"
+      />
+      <h1
+        class=""
+        data-testid="heading"
+      >
+        Brewdog Beer Collection
+      </h1>
+    </header>
+  </a>
+  <article>
+    <header>
+      <h2
+        class=""
+        data-testid="heading"
+      >
+        Pilsen Lager
+      </h2>
+      <h3
+        class=""
+        data-testid="heading"
+      >
+        Unleash the Yeast Series.
+      </h3>
+      <p>
+        09/2013
+      </p>
+    </header>
+    <div>
+      <img
+        alt="Pilsen Lager"
+        src="https://images.punkapi.com/v2/4.png"
+      />
+    </div>
+    <div>
+      <p>
+        Our Unleash the Yeast series was an epic experiment into the differences in aroma and flavour provided by switching up your yeast. We brewed up a wort with a light caramel note and some toasty biscuit flavour, and hopped it with Amarillo and Centennial for a citrusy bitterness. Everything else is down to the yeast. Pilsner yeast ferments with no fruity esters or spicy phenols, although it can add a hint of butterscotch.
+      </p>
+      <h4
+        class=""
+        data-testid="heading"
+      >
+        Brewer's Tip
+      </h4>
+      <p>
+        Play around with the fermentation temperature to get the best flavour profile from the individual yeasts.
+      </p>
+      <h4
+        class=""
+        data-testid="heading"
+      >
+        Food Pairing
+      </h4>
+      <ul>
+        <li>
+          Spicy crab cakes
+        </li>
+        <li>
+          Spicy cucumber and carrot Thai salad
+        </li>
+        <li>
+          Sweet filled dumplings
+        </li>
+      </ul>
+      <h4
+        class=""
+        data-testid="heading"
+      >
+        Ingredients
+      </h4>
+      <ul>
+        <li>
+          Extra Pale
+        </li>
+        <li>
+          Caramalt
+        </li>
+        <li>
+          Dark Crystal
+        </li>
+        <li>
+          Munich
+        </li>
+      </ul>
+      <ul>
+        <li>
+          Centennial
+        </li>
+        <li>
+          Amarillo
+        </li>
+        <li>
+          Centennial
+        </li>
+        <li>
+          Amarillo
+        </li>
+        <li>
+          Centennial
+        </li>
+        <li>
+          Amarillo
+        </li>
+      </ul>
+    </div>
+    <footer>
+      Contributed by - Ali Skinner &lt;AliSkinner&gt;
+    </footer>
+  </article>
+</DocumentFragment>
+`;

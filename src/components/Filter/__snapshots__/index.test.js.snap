@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filter /> snapshot: renders default state 1`] = `
+<DocumentFragment>
+  <div>
+    <label
+      for="filterDropdown"
+    >
+      Order by:
+    </label>
+    <select
+      data-testid="dropdown"
+      id="filterDropdown"
+    >
+      <option>
+        - Select an option -
+      </option>
+      <option
+        value="name"
+      >
+        Name
+      </option>
+      <option
+        value="first_brewed"
+      >
+        Date first brewed
+      </option>
+      <option
+        value="abv"
+      >
+        ABV
+      </option>
+      <option
+        value="ibu"
+      >
+        IBU
+      </option>
+    </select>
+  </div>
+</DocumentFragment>
+`;

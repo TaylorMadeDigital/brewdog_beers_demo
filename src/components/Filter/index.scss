@@ -1,0 +1,12 @@
+@import '../../assets/scss/variables';
+
+.root {
+    background: $toolbar-bg-color;
+    padding: $space-base $space-m;
+
+    label {
+      color: $light-text-color;
+      font-weight: bold;
+      margin: 0 $space-base 0 0;
+    }
+}

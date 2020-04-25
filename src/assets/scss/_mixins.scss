@@ -1,0 +1,29 @@
+@mixin stdSpacing(
+    $types: (
+      "margin",
+      "padding"
+    ),
+    $sides: (
+      "top",
+      "bottom"
+    )
+  ) {
+    @each $type in $types {
+      @each $side in $sides {
+        #{$type}-#{$side}: $space-base;
+  
+        @include breakpoint('medium') {
+          #{$type}-#{$side}: $space-m;
+        }
+  
+        @include breakpoint('large') {
+          #{$type}-#{$side}: $space-m;
+        }
+  
+        @include breakpoint('x-large') {
+          #{$type}-#{$side}: $space-l;
+        }
+      }
+    }
+  }
+  

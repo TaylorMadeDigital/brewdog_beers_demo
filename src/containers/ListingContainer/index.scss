@@ -1,0 +1,15 @@
+@import '../../assets/scss/grid';
+@import '../../assets/scss/variables';
+
+.root {
+    overflow: hidden;
+}
+.cardList {
+    @include gridContainer;
+    padding: $space-base;
+}
+
+span {
+    margin: $space-s;
+    display: inline-block;
+}

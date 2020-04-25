@@ -1,0 +1,42 @@
+@import '../../assets/scss/grid';
+@import '../../assets/scss/typography';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+  
+  .heading {
+    @include font-size('default', 'bold');
+    font-family: $headline-font;
+    text-align: center;
+    color: $heading-text-color;
+    margin: 0;
+
+    &.heading--left {
+      text-align: left;
+    }
+  
+    &.heading--padding {
+      @include stdSpacing('margin', 'top');
+    }
+  }
+  
+  h1.heading {
+    color: darken($heading-text-color, 10%);
+    margin-bottom: 0;
+    @include font-size('x-large', 'bold');
+  }
+  
+  h2.heading {
+    margin-bottom: $space-xs;
+    @include font-size('large', 'bold');
+  }
+  
+  h3.heading {
+    margin-bottom: $space-xs;
+    @include font-size('medium', 'bold');
+  }
+  
+  h4.heading {
+    margin-bottom: $space-base;
+    @include font-size('default', 'bold');
+  }
+  

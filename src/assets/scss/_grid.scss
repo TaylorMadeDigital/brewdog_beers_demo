@@ -1,0 +1,114 @@
+$baseline: 16px !default;
+$gutter: $baseline !default;
+$column-number: 12;
+
+// New breakpoints. Replaces $breakpoints
+$breakpoints: (
+  'medium': 640px,
+  'large': 960px,
+  'x-large': 1280px,
+) !default;
+
+$max-width: 1296px;
+
+// New breakpoints mixin. Replaces platform()
+@mixin breakpoint($size) {
+  @each $name, $width in $breakpoints {
+    @if $size == $name {
+      @media screen and (min-width: $width) {
+        @content;
+      }
+    }
+  }
+}
+
+@function get-fraction-width($value) {
+  @return calc(#{$value} - #{$gutter});
+}
+
+@mixin resetGridColumns {
+  width: auto;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@mixin offsetSingleItem-grid($offsetValue:null, $breakpoints:null) {
+  @include resetGridColumns;
+
+  $offsetValue: auto !default;
+
+  grid-column-start: $offsetValue;
+
+  @each $breakpoint, $value in $breakpoints {
+    @include breakpoint($breakpoint) {
+      grid-column-start: $value;
+    }
+  }
+}
+
+@mixin offsetSingleItem-flex($offsetValue:null, $breakpoints:null) {
+  $offsetValue: auto !default;
+
+  @if $offsetValue == auto {
+    margin-left: 8px;
+  }
+  @else {
+    margin-left: calc((100% / #{$column-number}) * (#{$offsetValue} - 1));
+  }
+  @each $breakpoint, $value in $breakpoints {
+    @include breakpoint($breakpoint) {
+      @if $value == auto {
+        margin-left: 0;
+      }
+      @else {
+        margin-left: calc((100% / #{$column-number}) * (#{$value} - 1));
+      }
+    }
+  }
+}
+@mixin buildCssGridContainer($grid-gap:null) {
+  $grid-gap: $gutter !default;
+
+  display: grid;
+  grid-column-gap: $grid-gap;
+  grid-template-columns: repeat($column-number, 1fr);
+}
+
+@mixin buildCssGridItem($columnSpan:null, $breakpoints:null) {
+  $columnSpan: 1 !default;
+
+  @include resetGridColumns;
+
+  grid-column-end: span $columnSpan;
+
+  @each $breakpoint, $value in $breakpoints {
+    @include breakpoint($breakpoint) {
+      @include resetGridColumns;
+
+      grid-column-end: span $value;
+    }
+  }
+}
+
+@mixin gridContainer($args...) {
+  width: 100%;
+  box-sizing: border-box;
+  @supports (display: grid) {
+    @include buildCssGridContainer($args...);
+  }
+}
+
+@mixin gridItem($args...) {
+  box-sizing: border-box;
+  @supports (display: grid) {
+    @include buildCssGridItem($args...);
+  }
+}
+
+// Offset to be used  on single item or first of type.
+@mixin offsetSingleItem($args...) {
+  @include offsetSingleItem-flex($args...);
+  @supports (display: grid) {
+    @include offsetSingleItem-grid($args...);
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../assets/scss/grid';
+@import '../../assets/scss/variables';
+@import '../../assets/scss/mixins';
+
+.card {
+    margin-bottom: $space-base;
+    padding: $space-base;
+    @include gridItem(12);
+    background: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.13), 0 10px 20px rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    @include breakpoint(medium) {
+        @include gridItem(6);
+    }
+    @include breakpoint(large) {
+        @include gridItem(3);
+    }
+}

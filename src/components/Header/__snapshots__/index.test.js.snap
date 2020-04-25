@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> snapshot: renders default state 1`] = `
+<DocumentFragment>
+  <a
+    href="/"
+  >
+    <header>
+      <img
+        alt="Brewdog logo"
+        role="presentation"
+        src="brewdog_logo.png"
+      />
+      <h1
+        class=""
+        data-testid="heading"
+      >
+        Brewdog Beer Collection
+      </h1>
+    </header>
+  </a>
+</DocumentFragment>
+`;
