@@ -1,5 +1,9 @@
 {
   "name": "brewdog-beers",
+  "author": {
+    "name": "Joanne Taylor",
+    "email": "hello@taylormade-digital.com"
+  },
   "version": "0.1.0",
   "private": true,
   "dependencies": {

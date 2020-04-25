@@ -17,6 +17,13 @@ export const CardComponent = props => {
     <Link to={item.link}>{children}</Link>
     : children);
 
+    WithLink.propTypes = {
+      children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node
+    ]), 
+    };
+
   const cardComponent  = (
     <article data-testid="card"  className={s.card}>   
       <WithLink>

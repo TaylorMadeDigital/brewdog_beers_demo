@@ -1,3 +1,6 @@
+# Brewdog Beer Catalogue
+A simple app to fetch Brewdog beers from their API and display them in a catalogue allowing the user to find out more about their favourite beer.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

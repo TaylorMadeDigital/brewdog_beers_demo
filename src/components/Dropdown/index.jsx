@@ -25,6 +25,7 @@ const Dropdown = ({
 
 export const dropdownPropTypes = {
   id: PropTypes.string,
+  value: PropTypes.string,
   options: PropTypes.arrayOf(PropTypes.shape({
     value: PropTypes.string,
     label: PropTypes.string,

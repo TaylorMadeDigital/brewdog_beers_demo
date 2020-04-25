@@ -1,7 +1,6 @@
 import { BeerActionTypes } from '../actions/index';
 
 const beers = (state = { all: [], current: {}, filter: null}, action) => {
-  console.log(action);
   switch (action.type) {
     case BeerActionTypes.GET_ALL:
       return Object.assign({}, state, {
