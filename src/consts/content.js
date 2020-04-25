@@ -8,12 +8,12 @@ export const CONTENT = {
     brewed: 'First brewed:',
     abv: 'ABV:',
     ibu: 'IBU:',
+    notAvailable: 'Not supplied',
   },
   detail: {
     brewersTips: 'Brewer\'s Tip',
     foodPairing: 'Food Pairing',
     ingredients: 'Ingredients',
-    notAvailable: 'Not supplied',
     footer: 'Contributed by -',
   },
   filter: {
