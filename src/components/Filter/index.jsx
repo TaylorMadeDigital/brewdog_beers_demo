@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import Dropdown from '../Dropdown';
 import s from './index.scss';
 import { FILTER_OPTIONS } from '../../consts/filterOptions';
@@ -7,7 +7,7 @@ import { CONTENT } from '../../consts/content';
 
 const FilterComponent = () => {
 
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState(useSelector(state => state.beers.filter));
   const dispatch = useDispatch();
 
   const handleChange = (newValue) => setFilter(newValue);
