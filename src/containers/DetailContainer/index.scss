@@ -9,9 +9,14 @@
 
 .header {
   @include gridItem(12);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background: $toolbar-bg-color;
   color: $light-text-color;
   padding: $space-base;
+
+  h2 { width: 100% }
 
   h2, h3 {
     color: $light-text-color;
@@ -20,10 +25,11 @@
     display: inline-block;
   }
   h3 + p {
-    margin: 0 $space-s ;
+    margin: 0 $space-base ;
   }
   p {
     @include font-size('small');
+    line-height: 2.1rem;
   }
 }
 
