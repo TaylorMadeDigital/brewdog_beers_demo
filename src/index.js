@@ -9,6 +9,7 @@ import './assets/scss/base.scss';
 import ListingContainer from './containers/ListingContainer';
 import DetailContainer from './containers/DetailContainer';
 import * as serviceWorker from './serviceWorker';
+import ScrollToTop from './scrollToTop';
 
 const store = createStore(rootReducer)
 
@@ -16,6 +17,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
+        <ScrollToTop />
         <Route path="/detail/:id" component={DetailContainer} />
         <Route exact path="/" component={ListingContainer} />
       </Router>
